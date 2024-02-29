@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog go brrrrr</title>
+
+    <link rel="stylesheet" href="https://use.typekit.net/siy5lii.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/siy5lii.css" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        background-color: rgba(26, 18, 28, 1);
+        padding: 10px;
+      }
+      .card {
+        width: 350px;
+        height: 515px;
+        margin: 100px auto 0;
+        background: transparent;
+      }
+
+      .card-inner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+      }
+
+      .front,
+      .back {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        position: absolute;
+        backface-visibility: hidden;
+      }
+
+      .front {
+        background: url("Portfolio Pics/bunbun-purple.png");
+        background-size: cover;
+        background-position: center;
+        padding: 5px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: whitesmoke;
+        font-family: "exocet", sans-serif;
+      }
+
+      .h2 {
+        font-weight: 500;
+      }
+      .front button {
+        width: 120px;
+        border: 1px solid whitesmoke;
+        background: transparent;
+        border-radius: 8px;
+        padding: 8px 20px;
+        cursor: pointer;
+        margin-top: 20px;
+        color: whitesmoke;
+      }
+      .back {
+        background: whitesmoke;
+        color: black;
+        padding: 20px 40px;
+        transform: translateY(180deg);
+        font-family: garamond;
+        transform: rotateY(180deg);
+      }
+      .back h1 {
+        font-size: 50px;
+        line-height: 55px;
+        margin-bottom: 10px;
+        font-family: "exocet", sans-serif;
+      }
+
+      .back p {
+        font-size: 14px;
+      }
+
+      .back img {
+        width: 98px;
+      }
+
+      .card:hover .card-inner {
+        transform: rotateY(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-inner">
+          <div class="front">
+            <h2>Le Emily You</h2>
+            <p>Motion Media Designer</p>
+            <button>hover me</button>
+          </div>
+
+          <div class="back">
+            <img src="Images/SVG/Logo.svg" alt="hello ;D" />
+            <h1>Le Emily <span>You</span></h1>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis id
+              natus quasi sunt neque velit rerum voluptates libero quibusdam
+              dolorem repellendus mollitia, similique eius molestias. Quidem
+              repellat impedit tempore ullam
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
